@@ -1,3 +1,3 @@
 # YoutubeCloneClient
 
-Trying to recreate youtube page using Reactjs for learning it (first project using reactjs)
+Trying to create youtube page using Reactjs for learning how to use reactjs (first project using reactjs)
