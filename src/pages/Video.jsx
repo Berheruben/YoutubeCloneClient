@@ -4,11 +4,13 @@ import ThumbUpIcon from '@mui/icons-material/ThumbUp';
 import ThumbDownIcon from '@mui/icons-material/ThumbDown';
 import ShareIcon from '@mui/icons-material/Share';
 import ReplyIcon from '@mui/icons-material/Reply';
+import Card from '../components/Card';
 const Container = styled.div`
 display: flex;
 gap: 24px;
 `;
 const Content = styled.div`
+
 flex:5;
 `;
 const VideoWrapper = styled.div`
@@ -55,22 +57,30 @@ justify-content: space-between;
 
 `;
 const ChannelInfo = styled.div`
-
+display: flex;
+gap: 20px;
 
 
 `;
 const Image = styled.img`
-
+width:50px;
+height: 50px;
+border-radius: 50%;
+background-color: #999;
 
 
 `;
 const ChannelDetail = styled.div`
-
-
+display: flex;
+flex-direction: column;
+color:${({theme})=>theme.text}; 
 
 `;
 const ChannelCounter = styled.span`
-
+margin-top: 5px;
+margin-bottom: 5px;
+color:${theme=>theme.textSoft}; 
+font-size: 12px;
 
 
 `;
@@ -80,12 +90,19 @@ const ChannelName = styled.span`
 
 `;
 const Description = styled.p`
-
+font-size:14px;
 
 
 `;
-const Subscribe = styled.buttom`
-
+const Subscribe = styled.button`
+background-color: red;
+font-weight:500;
+color:white;
+border:none; 
+border-radius: 3px;
+height: max-content;
+padding:10px 20px;
+cursor: pointer;
 `;
 
 const Video = () => {
@@ -116,6 +133,7 @@ const Video = () => {
       <ChannelName>Ruben</ChannelName>
       <ChannelCounter>15.000 Subscribers</ChannelCounter>
       <Description>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
       </Description>
     </ChannelDetail>
     <Subscribe>Subscribe</Subscribe>
