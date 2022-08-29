@@ -4,9 +4,11 @@ import ThumbUpIcon from '@mui/icons-material/ThumbUp';
 import ThumbDownIcon from '@mui/icons-material/ThumbDown';
 import ShareIcon from '@mui/icons-material/Share';
 import ReplyIcon from '@mui/icons-material/Reply';
+import Comments from '../components/Comments';
 import Card from '../components/Card';
 const Container = styled.div`
 display: flex;
+
 gap: 24px;
 `;
 const Content = styled.div`
@@ -14,6 +16,7 @@ const Content = styled.div`
 flex:5;
 `;
 const VideoWrapper = styled.div`
+
 flex:5;
 `;
 const Title = styled.h1`
@@ -49,10 +52,11 @@ cursor: pointer;
 
 `;
 const Recommendation = styled.div`
-flex:2;
+flex:1.5;
 `;
 const Channel = styled.div`
 display: flex;
+gap:20px;
 justify-content: space-between;
 
 `;
@@ -139,6 +143,8 @@ const Video = () => {
     <Subscribe>Subscribe</Subscribe>
   </ChannelInfo>
 </Channel>
+<Hr/>
+<Comments/>
 </Content>
 <Recommendation>recommendation</Recommendation>
 
