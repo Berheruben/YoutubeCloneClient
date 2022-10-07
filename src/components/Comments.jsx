@@ -2,8 +2,8 @@ import React from 'react'
 import styled from "styled-components";
 import Comment from '../components/Comment';
 const Container = styled.div`
-display: flex;
-gap: 24px;
+
+
 `;
 const NewComment = styled.div`
 display: flex;
@@ -25,7 +25,7 @@ border-bottom: 1px solid ${theme=>theme.Soft};
 background-color: transparent;
 outline:none;
 padding: 5px;
-width: 1000px;
+width: 100%;
 
 
 `;
@@ -36,9 +36,13 @@ const Comments = () => {
             <Avatar/>
             <Input placeholder="add a comment..."/>
         </NewComment>
-        
-       
-        </Container>
+       <Comment/>
+       <Comment/>
+       <Comment/>
+       <Comment/>
+       <Comment/>
+       <Comment/>
+         </Container>
         
   )
 }

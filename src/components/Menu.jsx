@@ -36,6 +36,9 @@ align-items: center;
 gap: 20px;
 cursor: pointer;
 
+&:hover{
+  background-color: ${({theme})=>theme.soft};
+}
 
 `;
 const Logo = styled.div`

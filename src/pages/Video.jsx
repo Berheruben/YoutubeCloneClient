@@ -8,7 +8,6 @@ import Comments from '../components/Comments';
 import Card from '../components/Card';
 const Container = styled.div`
 display: flex;
-
 gap: 24px;
 `;
 const Content = styled.div`
@@ -146,7 +145,12 @@ const Video = () => {
 <Hr/>
 <Comments/>
 </Content>
-<Recommendation>recommendation</Recommendation>
+<Recommendation>
+  <Card type="small"/>
+  <Card type="small"/>
+  <Card type="small"/>
+  <Card type="small"/>
+</Recommendation>
 
 
 
